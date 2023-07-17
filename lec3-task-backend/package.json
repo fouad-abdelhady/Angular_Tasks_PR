@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "name": "lec3-task-backend",
+  "version": "1.0.0",
+  "description": "Task 3, required products api",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Fouad Abdelhady",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
