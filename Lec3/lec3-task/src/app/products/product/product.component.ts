@@ -17,7 +17,6 @@ export class ProductItemComponent {
         if(this.selectedFilter =="All")return true;
         if(this.selectedFilter =="Avaliable" && product.isAvailable) return true;
         if(this.selectedFilter =="Featured" && product.isFeatured) return true;
-        console.log("false");
         return false;
       }
 }

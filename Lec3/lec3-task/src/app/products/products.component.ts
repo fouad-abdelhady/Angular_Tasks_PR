@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Product } from '../shared/models/productModel'
 import { ProductsService } from '../shared/services/products/products-services.service';
 @Component({
@@ -6,17 +6,21 @@ import { ProductsService } from '../shared/services/products/products-services.s
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })
-export class ProductsComponent {
+export class ProductsComponent implements OnInit{
   featured: number;
   avaliableCount: number;
   all: number = 0;
   filter = "All";
   products?:Product[];
+  
   constructor(private productsService:ProductsService){
     this.featured = 0;
     this.avaliableCount = 0;
+  }
+  ngOnInit(): void {
    this.setProductsList(); 
   }
+
   async setProductsList():Promise<void>{
    this.products = await this.productsService.fetchProductsList();
    this.setCounts();

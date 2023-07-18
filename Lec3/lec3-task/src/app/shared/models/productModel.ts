@@ -11,4 +11,8 @@ export class Product{
         this.isAvailable = item.isAvailable??false;
         this.isFeatured = item.isFeatured??false;
     }
+
+    static fromResponseList(items:{nameProduct?:string, imageProduct?:string, priceProduct?:number, isAvailable?:boolean, isFeatured?:boolean}[]):Product[]{
+        return items.map(item=>new Product(item));
+    }
 }
