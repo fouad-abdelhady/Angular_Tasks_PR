@@ -1,0 +1,37 @@
+$svg-dimentions: 40px;
+$count-dimentions: 4vh;
+$nav-horizontal-margin: 1vw;
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 $nav-horizontal-margin;
+}
+
+.svgs{
+    height: 40px;
+    width: 40px;
+}
+
+.cartIcon{
+    position: relative;
+    cursor: pointer;
+}
+
+.cartIcon :nth-child(2){
+    color: rgb(187, 187, 187);
+    background-color: rgb(36, 36, 36);
+    width: $count-dimentions;
+    height: $count-dimentions;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    left: 70%;
+}
+.logo{
+    cursor: pointer;
+}

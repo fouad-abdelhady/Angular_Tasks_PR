@@ -1,0 +1,14 @@
+<h2>Bill Details</h2>
+<ng-container *ngFor="let cartItem of cartData.products;">
+    <div class="billItemDetails">
+        <label>{{cartItem.title}}</label>
+        <label> X {{cartItem.amount}}</label>
+        <label>{{cartItem.total}} $</label>
+    </div>
+</ng-container>
+<hr>
+<div class="billItemDetails">
+    <label> Total Price: </label>
+    <label>{{cartData.itemsCount}}</label>
+    <label>{{cartData.total}} $</label>
+</div>

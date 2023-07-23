@@ -1,0 +1,14 @@
+<ng-container *ngFor="let cartItem of cartItems">
+    <div class="cartItem">
+        <img [src]="cartItem.img" alt="">
+        <div class="productDetails">
+            <label>{{cartItem.title}}</label>
+        </div>
+        <div>
+            <label> X {{cartItem.amount}}</label>
+        </div>
+        <div>
+            <div class="removeBtn" (click)="deleteCartItem(cartItem.productId)">{{setDeleteButtonLabel(cartItem.productId)}}</div>
+        </div>
+    </div>
+</ng-container>

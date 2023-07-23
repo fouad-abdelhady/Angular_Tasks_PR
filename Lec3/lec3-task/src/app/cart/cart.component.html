@@ -1,0 +1,6 @@
+<app-navigation [itemsCount]="cart?cart.itemsCount:0"></app-navigation>
+<app-loading message="Your Cart" *ngIf="isLoadingCart"></app-loading>
+<div class="mainBody" *ngIf="!isLoadingCart">
+    <app-cart-items [cartItems]="cart?cart.products:[]" (cartItemRemovedEvent)="onCartItemRemoved($event)"></app-cart-items>
+    <app-bill [cartData]="cart"></app-bill>
+</div>

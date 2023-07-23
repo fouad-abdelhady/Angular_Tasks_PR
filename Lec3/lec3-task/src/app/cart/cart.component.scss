@@ -1,0 +1,8 @@
+.mainBody{
+    width: 100%;
+    display: grid;
+    grid-template-areas:"cartItems cartItems billDetails";
+    
+}
+app-cart-items{grid-area: cartItems;}
+app-bill{grid-area: billDetails;}

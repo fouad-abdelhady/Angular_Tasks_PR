@@ -1,1 +1,36 @@
 GET http://localhost:8080/products
+###
+POST http://localhost:8080/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYXJ0SWQiOiI2NGI3Y2E2ODk1YjJiNjllNjAzOWRjZmUiLCJpYXQiOjE2ODk3NjY1MDV9.H6hq-f1gxcWedk3Yb5JFOZazp1KX7dkhe7muDwN6LeM
+Content-Type: application/json
+
+{
+    "productId":"123569",
+    "title":"Product three",
+    "price":150,
+    "img":"image"
+}
+###
+
+GET http://localhost:8080/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYXJ0SWQiOiI2NGI3Y2E2ODk1YjJiNjllNjAzOWRjZmUiLCJpYXQiOjE2ODk3NjY1MDV9.H6hq-f1gxcWedk3Yb5JFOZazp1KX7dkhe7muDwN6LeM
+
+###
+DELETE http://localhost:8080/cart/123569
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYXJ0SWQiOiI2NGI3Y2E2ODk1YjJiNjllNjAzOWRjZmUiLCJpYXQiOjE2ODk3NjY1MDV9.H6hq-f1gxcWedk3Yb5JFOZazp1KX7dkhe7muDwN6LeM
+
+###
+GET http://localhost:8080/cart/itemsCount
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYXJ0SWQiOiI2NGI3Y2E2ODk1YjJiNjllNjAzOWRjZmUiLCJpYXQiOjE2ODk3NjY1MDV9.H6hq-f1gxcWedk3Yb5JFOZazp1KX7dkhe7muDwN6LeM
+
+###
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{"nameProduct":"Some Creams", "imageProduct":"../../../assets/product-8.jpg", "priceProduct":60, "isAvailable":false}
+
+###
+GET http://localhost:8080/products
+Content-Type: application/json
+
+
