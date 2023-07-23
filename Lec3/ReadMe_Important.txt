@@ -1,0 +1,2 @@
+- List of API are in ./lec3-task-backend/apiTester.rest
+- The bakcend is deployed and the base url is https://lec4backend.up.railway.app/
