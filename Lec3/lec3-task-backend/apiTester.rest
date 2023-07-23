@@ -5,10 +5,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYXJ0SWQiOiI2NGI3Y
 Content-Type: application/json
 
 {
-    "productId":"123569",
-    "title":"Product three",
-    "price":150,
-    "img":"image"
+    "productId":"64b7fdc3b2d82e7568b37",
+    "title":"Blue T-Shirt",
+    "price":250,
+    "img":"https://iili.io/HLUXHhX.jpg"
 }
 ###
 
@@ -20,17 +20,22 @@ DELETE http://localhost:8080/cart/123569
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYXJ0SWQiOiI2NGI3Y2E2ODk1YjJiNjllNjAzOWRjZmUiLCJpYXQiOjE2ODk3NjY1MDV9.H6hq-f1gxcWedk3Yb5JFOZazp1KX7dkhe7muDwN6LeM
 
 ###
-GET http://localhost:8080/cart/itemsCount
+GET https://lec4backend.up.railway.app/cart/itemsCount
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYXJ0SWQiOiI2NGI3Y2E2ODk1YjJiNjllNjAzOWRjZmUiLCJpYXQiOjE2ODk3NjY1MDV9.H6hq-f1gxcWedk3Yb5JFOZazp1KX7dkhe7muDwN6LeM
 
 ###
 POST http://localhost:8080/products
 Content-Type: application/json
 
-{"nameProduct":"Some Creams", "imageProduct":"../../../assets/product-8.jpg", "priceProduct":60, "isAvailable":false}
+{
+    "nameProduct":"Nikon Camera", 
+    "imageProduct":"url", 
+    "priceProduct":2000, 
+    "isAvailable":true,
+    "isFeatured": false
+}
 
-###
-GET http://localhost:8080/products
-Content-Type: application/json
+
+
 
 
