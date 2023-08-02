@@ -1,0 +1,16 @@
+.searchContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.searchContainer input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    outline: none;
+    width: 25%;
+}
+/*'Segoe UI', Tahoma, Geneva, Verdana, sans-serif*/

@@ -1,0 +1,52 @@
+.contactItem{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    display:flex;
+    gap: 1rem;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    height: 100px;
+    padding-right: 0.5vw;
+}
+.contactInfo{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+.contactsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    margin: 0 10vw;
+}
+.imgContainer {
+    overflow: hidden;
+}
+.imgContainer img {
+    height: 100%;
+}
+.info{
+    flex-grow: 1;
+   
+}
+.optionsContainer{
+    display:flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.info h3{
+    color: grey;
+    font-weight: normal;
+}
+.info h2{
+    font-weight: normal;
+}
+.deleteButton{
+    cursor: pointer;
+}
+.updateButton{
+    cursor: pointer;
+    width:"25px"; height:"25px";
+}

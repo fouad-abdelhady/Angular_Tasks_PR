@@ -1,0 +1,4 @@
+
+<app-contact-search (onSearchChanged)="onSearchEnterd($event)"></app-contact-search>
+<span class="contactsHeader"><h2>{{!searchExpr?"Your Contacts":"Search Result"}}</h2></span>
+<app-contacts-items [contactsList]="contacts" (contactDelete)="deleteContact($event)" [searchExpr]="searchExpr"></app-contacts-items>

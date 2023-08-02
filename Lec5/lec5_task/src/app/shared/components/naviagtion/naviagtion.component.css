@@ -1,0 +1,13 @@
+ 
+nav{
+    display: flex;
+    gap: 2vw;
+    color: black;
+    padding: 20px;
+    margin-bottom: 2vh;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
