@@ -11,6 +11,6 @@
     text-align: center;
     padding: 5px;
     outline: none;
-    width: 25%;
+    max-width: max-content;
 }
 /*'Segoe UI', Tahoma, Geneva, Verdana, sans-serif*/
