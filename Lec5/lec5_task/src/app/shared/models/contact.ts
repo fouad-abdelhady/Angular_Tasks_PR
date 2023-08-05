@@ -1,11 +1,13 @@
 export class Contact{
+    private _index?:number;
     private _name: string;
     private _imageUrl: string;
     private _mobileNum: string;
-    constructor(name:string, imageUrl:string, mobileNum:string){
+    constructor(name:string, imageUrl:string, mobileNum:string, index?:number){
         this._name = name;
         this._imageUrl = imageUrl;
         this._mobileNum = mobileNum;
+        this._index = index;
     }
 
     set name(newName:string){
@@ -26,6 +28,10 @@ export class Contact{
     }
     get mobileNum(){
         return this._mobileNum;
+    }
+
+    get index(){
+        return this._index;
     }
 
     static CONTACTS_LIST: Contact[] = [
@@ -68,4 +74,16 @@ export class Contact{
       static deleteContact(index: number): void {
         this.CONTACTS_LIST.splice(index, 1);
       }
+    static validateContactInfo(name?:string, mobile?:string, img?:string): boolean {
+        if(!name || !mobile || !img) return false;
+        return true;
+    }
+    static updateContact(contact: Contact): void {
+        Contact.CONTACTS_LIST[contact.index!].name = contact.name;
+        Contact.CONTACTS_LIST[contact.index!].mobileNum = contact.mobileNum;
+        Contact.CONTACTS_LIST[contact.index!].imageUrl = contact.imageUrl;
+    }
+    static checkIfNumberExists(mobile: string): boolean {
+        return !!Contact.CONTACTS_LIST.find(contact => contact.mobileNum === mobile);
+    }
 }

@@ -16,6 +16,7 @@
     gap: 0.5vw;
 }
 .contactsList {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
@@ -49,4 +50,67 @@
 .updateButton{
     cursor: pointer;
     width:"25px"; height:"25px";
+}
+/**/
+.updateItem{
+    grid-column: 2fr;
+    grid-row: 2fr;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.updateItem input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    outline: none;
+    max-width: max-content;
+}
+.message{
+    color: rgb(155, 6, 6);
+}
+.updateOptions{
+    margin-top: 10px;
+    
+}
+.updateOptions > div{
+    cursor: pointer;
+    background-color: white;
+    display: inline;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    transition: 0.5s;
+}
+.updateOptions :first-child{
+    border-radius: 20px 0px 0px 20px;
+    border-left: 1px solid #ccc;
+}
+.updateOptions :nth-child(2){
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.updateOptions :last-child{
+    border-radius: 0px 20px 20px 0px;
+    border-right: 1px solid #ccc;
+}
+
+.updateOptions :first-child:hover{
+   background-color: rgb(58, 57, 57);
+   color: white;
+}
+.updateOptions :nth-child(2):hover{
+    background-color: rgb(24, 24, 112);
+    color:white;
+}
+.updateOptions :last-child:hover{
+    background-color: rgb(150, 5, 5);
+    color: white;
 }

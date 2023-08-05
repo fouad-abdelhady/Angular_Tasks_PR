@@ -1,0 +1,18 @@
+<main class="mainBody">
+    <header>
+        <h1> Create Contact</h1>
+    </header>
+    <section class="formContainer">
+        <div class="imgContainer">
+            <img [src]="!imageUrl?'/assets/profile_placeHolder.png': imageUrl" alt="">
+        </div>
+        <div class="inputsContainer">
+            <input type="text" placeholder="Enter contact name" [(ngModel)]="contactName">
+            <input type="text" placeholder="Enter contact number" [(ngModel)]="contactMobile">
+            <input type="text" placeholder="Enter image URL" [(ngModel)]="imageUrl">
+            
+        </div>
+        <p class="message">{{createError}}</p>
+        <div class="submitButton" (click)="addContact()">CREATE CONTACT</div>
+    </section>
+</main>
