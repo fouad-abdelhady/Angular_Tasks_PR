@@ -1,0 +1,12 @@
+<div id="accountsContainer">
+    <ng-container *ngFor="let account of accountsList">
+        <div class="accountInfo" (click)="selectItem(account)">
+            <div class="userImage">
+                <img [src]="account.avatar">
+            </div>
+            <div>
+                <h2>{{account.name}}</h2>
+            </div>
+        </div>
+    </ng-container>
+</div>

@@ -12,7 +12,7 @@ Content-Type: application/json
 }
 ###
 
-GET http://localhost:8080/cart
+GET https://lec4backend.up.railway.app/cart
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYXJ0SWQiOiI2NGI3Y2E2ODk1YjJiNjllNjAzOWRjZmUiLCJpYXQiOjE2ODk3NjY1MDV9.H6hq-f1gxcWedk3Yb5JFOZazp1KX7dkhe7muDwN6LeM
 
 ###

@@ -1,0 +1,2 @@
+<app-account-item [accountsList]="accounts"  (onAccountSelected)="accountSelected($event)" *ngIf="!selectedAccount"></app-account-item>
+<app-login *ngIf="selectedAccount" (back)="onBack()" [accountInfo]="selectedAccount"></app-login>

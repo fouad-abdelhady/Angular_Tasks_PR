@@ -1,0 +1,21 @@
+<div class="newToDo" (click)=" toggelAddToDo()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M450-450H200v-60h250v-250h60v250h250v60H510v250h-60v-250Z"/></svg>
+    <h3>Add New</h3>
+</div>
+<div class="newToDoContainer" [style.height]="height">
+    <div class="addContainer">
+        <h2>Add Task</h2>
+        <div id="todoInput">
+            <input type="text" placeholder="Enter the task name" [(ngModel)]="taskName" maxlength="10">
+        </div>
+        <h3>{{error}}</h3>
+        <div class="buttonsContainer">
+            <div class="button" id="cancelButton" (click)="toggelAddToDo()">
+                CANCEL
+            </div>
+            <div class="button" id="addButton" (click)="addToDo()">
+                ADD NEW
+            </div>
+        </div>
+    </div>
+</div>
